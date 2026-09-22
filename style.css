@@ -1,0 +1,337 @@
+/* ____________ GLOBAL STYLING ____________ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  background-color: #1a1d20;
+  font-family: "Inter", sans-serif;
+}
+/* h1 h2 h3 {
+  font-family: "Space Grotesk", sans-serif;
+  color: #1a1d2000;
+  z-index: 2;
+} */
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* ____________ COMPONENTS STYLING ____________ */
+.btn {
+  padding: 15px 60px;
+  font-weight: bold;
+}
+.primaryBtn {
+  background-color: #98211a;
+  transform: skewX(-15deg);
+}
+.primaryBtn span {
+  transform: scaleX(15deg);
+}
+.secondaryBtn {
+  transform: skewX(-15deg);
+}
+.secondaryBtn span {
+  transform: scaleX(15deg);
+}
+
+/* ____________ NAV SECTION ____________ */
+.header {
+  background-image: url(images/mypfp.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #5d61665d, #1a1d20);
+  pointer-events: none;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin-bottom: 15rem;
+  position: relative;
+  z-index: 2;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.nav-logo-img {
+  width: 40px;
+  height: auto;
+}
+.navList {
+  display: none;
+}
+.header-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navMenu {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.navMenuSpan {
+  width: 30px;
+  height: 2px;
+  background-color: #e0d8d0;
+}
+.icons {
+  display: none;
+}
+.navBtn {
+  display: none;
+}
+
+/* ____________ HERO SECTION ____________ */
+
+.heroContent {
+  padding: 0 1rem;
+}
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+.heroComponent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.7rem;
+  margin-bottom: 3rem;
+}
+.heroComponentSpan {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #8d0801;
+  border-radius: 50%;
+}
+.heroH1Span {
+  display: block;
+  background: linear-gradient(120deg, #630601, #98211a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.heroParagraph {
+  font-size: 0.8rem;
+  color: #d2d4d7;
+  margin-bottom: 1rem;
+  max-width: 300px;
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+}
+.heroBtn2 {
+  border-top: 1px solid #d2d4d76c;
+  border-bottom: 1px solid #d2d4d76c;
+  margin-top: 1rem;
+  background-color: #d2d4d70a;
+}
+.heroButtons {
+  margin-bottom: 2rem;
+}
+.ratingsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+.ratingsContainerChild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.ratingsContainerChild p {
+  font-size: 0.6rem;
+  color: #d2d4d7;
+  letter-spacing: 2px;
+}
+.ratingsContainerChild div {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+.ratingsContainerChild div span {
+  font-weight: bold;
+  color: #8d0801;
+}
+
+/* ____________ MARQUEE SECTION ____________ */
+
+.marquee-section {
+  border-top: 1px solid #98211a;
+  border-bottom: 1px solid #98211a;
+  overflow: hidden;
+  padding: 1.2rem 0;
+  background-color: #111111;
+}
+.marquee-track {
+  display: flex;
+  gap: 0;
+  white-space: nowrap;
+  animation: marquee 100s linear infinite;
+  width: max-content;
+}
+.marquee-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  color: #3e3b38;
+}
+.marquee-item span {
+  color: #98211a;
+  font-size: 1.2rem;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ____________ ABOUT SECTION ____________ */
+.about {
+  background-color: #1a1a1a;
+  padding: 0 1rem;
+  margin-top: 5rem;
+}
+.section-label {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #98211a;
+  display: flex;
+  align-items: center;
+}
+.section-label::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #98211a;
+  margin-right: 0.5rem;
+}
+.about-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.about-lead {
+  color: #e9ecef;
+  margin-bottom: 1rem;
+}
+.about-lead span {
+  color: #98211a;
+}
+.about-paragraph {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  color: #d2d4d7;
+}
+.about-quote {
+  border-left: 2px solid #630601;
+  padding-left: 1.5rem;
+  line-height: 1.55;
+  margin: 2rem 0rem;
+  font-weight: bold;
+}
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #98211a;
+  border-radius: 2px;
+  margin: 3rem 0;
+  color: #e01107;
+  background-color: #98201a42;
+}
+.status-badge span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #e01107;
+  border-radius: 50%;
+}
+.about-right-content {
+  padding: 1.5rem 0;
+  margin-bottom: 1rem;
+  border-top: 1px solid #5d616669;
+}
+
+.about-right-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  color: #e9ecef;
+  margin-bottom: 0.5rem;
+}
+.about-right-header span {
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #343a40;
+  border-radius: 50%;
+}
+.about-right-para {
+  font-size: 0.8rem;
+  color: #6f7379;
+}
+.last {
+  border-bottom: 1px solid #5d616669;
+}
+
+/* ____________ PROJECTS SECTION ____________ */
+
+.projects {
+  margin-top: 3rem;
+  background-color: #000000;
+}
