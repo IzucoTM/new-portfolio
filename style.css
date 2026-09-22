@@ -235,19 +235,11 @@ a {
 /* ____________ ABOUT SECTION ____________ */
 .about {
   background-color: #1a1a1a;
-  padding: 0 1rem;
-  margin-top: 5rem;
-  position: relative;
+  padding: 5rem 1rem 0 1rem;
+  /* margin-top: 5rem; */
+  /* position: relative; */
 }
-.about-logobg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80%;
-  opacity: 0.09;
-  z-index: 0;
-}
+
 .section-label {
   font-size: 0.8rem;
   margin-bottom: 1rem;
@@ -309,6 +301,18 @@ a {
   height: 10px;
   background-color: #e01107;
   border-radius: 50%;
+}
+.about-right {
+  position: relative;
+}
+.about-logobg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  opacity: 0.09;
+  z-index: 0;
 }
 .about-right-content {
   padding: 1.5rem 0;
