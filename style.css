@@ -236,8 +236,6 @@ a {
 .about {
   background-color: #1a1a1a;
   padding: 5rem 1rem 0 1rem;
-  /* margin-top: 5rem; */
-  /* position: relative; */
 }
 
 .section-label {
@@ -316,7 +314,6 @@ a {
 }
 .about-right-content {
   padding: 1.5rem 0;
-  margin-bottom: 1rem;
   border-top: 1px solid #5d616669;
 }
 
@@ -346,6 +343,6 @@ a {
 /* ____________ PROJECTS SECTION ____________ */
 
 .projects {
-  margin-top: 3rem;
-  background-color: #000000;
+  padding: 3rem 1rem;
+  background-color: #111111;
 }
