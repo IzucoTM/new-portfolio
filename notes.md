@@ -31,30 +31,11 @@ SHADE = #1a1d20
 
 BASE = #1a1a1a
 TINT = #333333
-SHADE = #000000
-
----
+SHADE = #111111
 
 BASE = #e9ecef
 TINT = #fdfdfd
 SHADE = #d2d4d7
-
-FONT SIZES ------------
-heading = 3.5rem
-paragraphs = 0.8rem
-
-Love that — this gives you way more personality to work with. Here's an updated version of the "About Me" content block:
-BASED IN Enugu State, Nigeria — open to remote work
-LANGUAGES English (fluent), [add others you speak]
-STUDIES [Your dev learning path — HTML/CSS foundation, self-taught JS, etc.]
-OFF THE CLOCK Anime, curating fits, sketching ideas for my own clothing line
-ALSO ME I'll overhaul my whole wardrobe before I overhaul a website — currently building a clothing brand on the side
-CURRENT OBSESSION Going fullstack (JS → React → Node) while getting my clothing brand off the ground
-HOW COLLEAGUES/CLIENTS DESCRIBE ME [Collect a few real quotes once you have them]
-A couple of thoughts:
-• The style/fashion + clothing brand angle is actually a strong differentiator for a dev portfolio — most devs' "off the clock" sections are generic (gaming, coffee, hiking). "Builds a clothing brand" and "obsessed with style" makes you memorable and hints you have a genuine eye for aesthetics, which is a real asset for front-end/UX work.
-• If the anime interest is more than casual, even a small visual nod (color palette, an icon, a subtle detail in your portfolio design) can tie your dev persona and your taste together without needing a paragraph explaining it.
-• What's the clothing brand called? If it has a name, I can help you write a punchier one-liner for "Also me" that name-drops it.
 
         <div class="timeline">
           <div class="timeline-item">

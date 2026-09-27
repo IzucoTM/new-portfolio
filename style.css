@@ -8,13 +8,17 @@
 }
 body {
   background-color: #1a1d20;
-  font-family: "Inter", sans-serif;
-}
-/* h1 h2 h3 {
+  /* font-family: "Inter", sans-serif; */
   font-family: "Space Grotesk", sans-serif;
-  color: #1a1d2000;
-  z-index: 2;
-} */
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
+  /* z-index: 2; */
+}
 img {
   width: 100%;
 }
@@ -72,8 +76,9 @@ a {
   align-items: center;
   padding: 1rem 1rem;
   margin-bottom: 15rem;
-  position: relative;
-  z-index: 2;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
 }
 .nav-logo {
   display: flex;
@@ -336,13 +341,59 @@ a {
   font-size: 0.8rem;
   color: #6f7379;
 }
-.last {
-  border-bottom: 1px solid #5d616669;
-}
 
 /* ____________ PROJECTS SECTION ____________ */
 
 .projects {
   padding: 3rem 1rem;
   background-color: #111111;
+}
+.project-header {
+  margin-bottom: 2rem;
+}
+.project-card {
+  background-color: #1a1a1a;
+  padding: 0.5rem;
+  border: 1px solid #333333;
+  margin-bottom: 0.2rem;
+}
+.project-card-component {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #98211a;
+  display: flex;
+  align-items: center;
+}
+.project-card-component::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #98211a;
+  margin-right: 0.5rem;
+}
+.project-card-title {
+  margin-bottom: 1rem;
+}
+.project-card-paragraph {
+  font-size: 0.8rem;
+  color: #6f7379;
+  margin-bottom: 1rem;
+  max-width: 300px;
+  line-height: 1.7;
+  letter-spacing: 0.8px;
+}
+.card-btn {
+  display: flex;
+  gap: 0.5rem;
+  color: #d2d4d7;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* ____________ work-process SECTION ____________ */
+.work-process {
+  background-color: #1a1a1a;
+  padding: 5rem 1rem 0 1rem;
 }
