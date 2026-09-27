@@ -353,11 +353,35 @@ a {
 }
 .project-card {
   background-color: #1a1a1a;
-  padding: 0.5rem;
   border: 1px solid #333333;
   margin-bottom: 0.2rem;
+  overflow: hidden;
+}
+.card-img {
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+.card-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent 75%, #1a1a1a 100%);
+  pointer-events: none;
+}
+
+.card-content {
+  padding: 1.5rem;
 }
 .project-card-component {
+  font-weight: bold;
   font-size: 0.8rem;
   margin-bottom: 1rem;
   color: #98211a;
@@ -373,23 +397,26 @@ a {
   margin-right: 0.5rem;
 }
 .project-card-title {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .project-card-paragraph {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #6f7379;
   margin-bottom: 1rem;
-  max-width: 300px;
   line-height: 1.7;
-  letter-spacing: 0.8px;
+  /* letter-spacing: 0.8px; */
 }
 .card-btn {
+  font-weight: bold;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  font-family: "JetBrains Mono", monospace;
   display: flex;
   gap: 0.5rem;
   color: #d2d4d7;
   display: inline-flex;
   align-items: center;
-  font-weight: bold;
 }
 
 /* ____________ work-process SECTION ____________ */
