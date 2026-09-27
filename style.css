@@ -8,7 +8,6 @@
 }
 body {
   background-color: #1a1d20;
-  /* font-family: "Inter", sans-serif; */
   font-family: "Space Grotesk", sans-serif;
 }
 h1,
@@ -17,7 +16,6 @@ h3,
 h4 {
   font-family: "Space Grotesk", sans-serif;
   font-family: "Inter", sans-serif;
-  /* z-index: 2; */
 }
 img {
   width: 100%;
@@ -244,6 +242,7 @@ a {
 }
 
 .section-label {
+  font-weight: bold;
   font-size: 0.8rem;
   margin-bottom: 1rem;
   color: #98211a;
@@ -258,7 +257,7 @@ a {
   background-color: #98211a;
   margin-right: 0.5rem;
 }
-.about-title {
+.about-header {
   font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -349,6 +348,7 @@ a {
   background-color: #111111;
 }
 .project-header {
+  font-size: 2.8rem;
   margin-bottom: 2rem;
 }
 .project-card {
@@ -397,7 +397,7 @@ a {
   margin-right: 0.5rem;
 }
 .project-card-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 .project-card-paragraph {
@@ -405,7 +405,6 @@ a {
   color: #6f7379;
   margin-bottom: 1rem;
   line-height: 1.7;
-  /* letter-spacing: 0.8px; */
 }
 .card-btn {
   font-weight: bold;
@@ -423,4 +422,58 @@ a {
 .work-process {
   background-color: #1a1a1a;
   padding: 5rem 1rem 0 1rem;
+}
+.work-process-component {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #98211a;
+  display: flex;
+  align-items: center;
+}
+.work-process-component::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #98211a;
+  margin-right: 0.5rem;
+}
+.work-process-header {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+.process {
+  display: grid;
+  gap: 0.3rem;
+}
+.process-step {
+  padding: 1.2rem;
+  background-color: #111111;
+  border: 1px solid #333333;
+}
+.step-number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #3a3a46;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+}
+.process-step h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.timeline-role {
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+  color: #d2d4d7;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.process-step p {
+  font-size: 0.8rem;
+  color: #6f7379;
+  margin-top: 1rem;
+  line-height: 1.7;
 }
