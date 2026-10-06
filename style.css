@@ -52,7 +52,6 @@ a {
   background-image: url(images/mypfp.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
   position: relative;
   padding-bottom: 1rem;
 }
@@ -269,7 +268,8 @@ a {
 .about-lead span {
   color: #98211a;
 }
-.about-paragraph {
+.about-paragraph,
+.about-right-para {
   font-size: 0.9rem;
   margin-bottom: 1rem;
   letter-spacing: 0.5px;
@@ -304,6 +304,7 @@ a {
   background-color: #e01107;
   border-radius: 50%;
 }
+/* ABOUT RIGHT */
 .about-right {
   position: relative;
 }
@@ -317,28 +318,32 @@ a {
   z-index: 0;
 }
 .about-right-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
   padding: 1.5rem 0;
   border-top: 1px solid #5d616669;
 }
 
 .about-right-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   font-weight: bold;
-  color: #e9ecef;
   margin-bottom: 0.5rem;
 }
-.about-right-header span {
-  display: block;
-  width: 7px;
-  height: 7px;
-  background-color: #343a40;
-  border-radius: 50%;
+.about-right-subheader {
+  color: #d2d4d7;
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 1rem;
 }
 .about-right-para {
-  font-size: 0.8rem;
   color: #6f7379;
+  font-size: 0.8rem;
+}
+.about-dot {
+  height: 8px;
+  width: 8px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
 }
 
 /* ____________ PROJECTS SECTION ____________ */
@@ -476,4 +481,13 @@ a {
   color: #6f7379;
   margin-top: 1rem;
   line-height: 1.7;
+}
+
+/* ____________ REVIEWS SECTION ____________ */
+.reviews {
+  background-color: #111111;
+}
+/* ____________ CONTACT SECTION ____________ */
+.contact {
+  background-color: #1a1a1a;
 }
