@@ -7,7 +7,7 @@
   color: #fff;
 }
 body {
-  background-color: #1a1d20;
+  background-color: #111111;
   font-family: "Space Grotesk", sans-serif;
 }
 h1,
@@ -28,6 +28,9 @@ a {
   display: inline-block;
 }
 
+section {
+  padding: 5rem 1rem;
+}
 /* ____________ COMPONENTS STYLING ____________ */
 .btn {
   padding: 15px 60px;
@@ -237,7 +240,6 @@ a {
 /* ____________ ABOUT SECTION ____________ */
 .about {
   background-color: #1a1a1a;
-  padding: 5rem 1rem 0 1rem;
 }
 
 .section-label {
@@ -325,7 +327,9 @@ a {
   padding: 1.5rem 0;
   border-top: 1px solid #5d616669;
 }
-
+.about-right-content:last-child {
+  border-bottom: 1px solid #5d616669;
+}
 .about-right-header {
   font-weight: bold;
   margin-bottom: 0.5rem;
@@ -350,7 +354,6 @@ a {
 /* ____________ PROJECTS SECTION ____________ */
 
 .projects {
-  padding: 3rem 1rem;
   background-color: #111111;
 }
 .project-header {
@@ -427,7 +430,6 @@ a {
 /* ____________ work-process SECTION ____________ */
 .work-process {
   background-color: #1a1a1a;
-  padding: 5rem 1rem 1rem 1rem;
 }
 .work-process-component {
   font-weight: bold;
@@ -487,7 +489,6 @@ a {
 /* ____________ REVIEWS SECTION ____________ */
 .reviews {
   background-color: #111111;
-  padding: 5rem 1rem;
 }
 .review-container {
   display: grid;
@@ -529,12 +530,229 @@ a {
 }
 /* ____________ CONTACT SECTION ____________ */
 .contact {
-  padding: 5rem 1rem 1rem 1rem;
   background-color: #1a1a1a;
 }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 3.5rem;
+}
 .contact-left p {
-  font-size: 0.9rem;
+  font-size: 1.01rem;
   letter-spacing: 0.5px;
   line-height: 1.6;
   color: #d2d4d7;
+  margin-bottom: 0.25rem;
+}
+.contact-email-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  gap: 0.5rem;
+  margin: 1.25rem 0 2rem;
+  color: #8d0801;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.contact-email-link ion-icon {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #8d0801;
+}
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+.contact-info-item:first-child {
+  border-top: 1px solid #5d616669;
+}
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid #5d616669;
+  color: #d2d4d7;
+}
+.contact-info-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+  border: 1px solid #5d616669;
+  border-radius: 2px;
+}
+.contact-info-icon ion-icon {
+  font-size: 1.2rem;
+  color: #8d0801;
+}
+.contact-info-label {
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.2rem;
+  color: #6f7379;
+}
+.contact-info-value {
+  font-size: 0.9rem;
+  color: #d2d4d7;
+}
+.contact-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-top: 2rem;
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.67rem;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #d2d4d7;
+  padding: 0.5rem 1rem;
+  border: 1px solid #5d616669;
+  border-radius: 2px;
+}
+.social-link ion-icon {
+  font-size: 1rem;
+  color: #d2d4d7;
+}
+/* CONTACT RIGHT */
+.contact-right {
+  background-color: #111111;
+  padding: 2rem;
+  border: 1px solid #333333;
+  position: relative;
+  overflow: hidden;
+}
+.contact-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #8d0801, transparent 75%);
+  pointer-events: none;
+}
+.form-header {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.form-subheader {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: #6f7379;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.form-label {
+  font-family:
+    jetbrains mono,
+    monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #6f7379;
+}
+.form-label .required {
+  color: #98211a;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  border: 1px solid #333333;
+  background-color: #1a1a1a;
+  color: #d2d4d7;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  padding: 0.75rem 1rem;
+  outline: none;
+  /* trans */
+}
+.form-error-message {
+  font-size: 0.7rem;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.1em;
+  color: #98211a;
+  display: none;
+}
+.form-foooter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form-foooter button {
+  border: none;
+}
+.form-note {
+  font-size: 0.7rem;
+  font-family: "JetBrains Mono", monospace;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.form-note ion-icon {
+  font-size: 1rem;
+  color: #6f7379;
+}
+
+/* ____________ FOOTER SECTION ____________ */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1.75rem 1.2rem;
+  border-top: 1px solid #5d616669;
+}
+.footer-copy {
+  font-family:
+    jetbrains mono,
+    monospace;
+  font-size: 0.7rem;
+  color: #6f7379;
+  letter-spacing: 0.08em;
+}
+.footer-build {
+  font-family:
+    jetbrains mono,
+    monospace;
+  font-size: 0.7rem;
+  color: #6f7379;
+  letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.footer-build span {
+  color: #98211a;
+  font-weight: bold;
 }
