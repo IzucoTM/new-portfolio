@@ -24,61 +24,64 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav class="nav" id="nav">
+      <div class="nav-logo">
+        <img
+          src="images/logo-dark-Photoroom.png"
+          alt="portfolio logo"
+          class="nav-logo-img"
+        />
+        <div class="logo-text">IZUCO</div>
+      </div>
+
+      <ul class="navList" id="navList">
+        <li><a href="#nav" class="navLink">Home</a></li>
+        <li><a href="#about" class="navLink">About</a></li>
+        <li><a href="#Projects" class="navLink">Projects</a></li>
+        <li><a href="#Process" class="navLink">Process</a></li>
+        <li><a href="#Ratings" class="navLink">Ratings</a></li>
+        <li><a href="#contact" class="navLink">Contact</a></li>
+      </ul>
+
+      <div class="header-buttons">
+        <div class="themeContainer">
+          <ion-icon name="moon" class="icons moonIcon"></ion-icon>
+          <ion-icon name="sunny" class="icons sunnyIcon"></ion-icon>
+        </div>
+
+        <a class="btn navBtn">Hire Me</a>
+        <div class="navMenu" id="openMenu">
+          <span class="navMenuSpan"></span>
+          <span class="navMenuSpan"></span>
+          <span class="navMenuSpan"></span>
+        </div>
+      </div>
+    </nav>
     <header class="header">
-      <nav class="nav">
-        <div class="nav-logo">
-          <img
-            src="images/logo-white-Photoroom.png"
-            alt="portfolio logo"
-            class="nav-logo-img"
-          />
-          <div class="logo-text">IZUCO</div>
-        </div>
-
-        <ul class="navList">
-          <li><a href="#home" class="navLink">Home</a></li>
-          <li><a href="#skills" class="navLink">Projects</a></li>
-          <li><a href="#work" class="navLink">Services</a></li>
-          <li><a href="#about" class="navLink">About</a></li>
-          <li><a href="#contact" class="navLink">Contact</a></li>
-        </ul>
-
-        <div class="header-buttons">
-          <div class="themeContainer">
-            <ion-icon name="moon" class="icons moonIcon"></ion-icon>
-            <ion-icon name="sunny" class="icons sunnyIcon"></ion-icon>
-          </div>
-
-          <a class="btn navBtn">Hire Me</a>
-          <div class="navMenu">
-            <span class="navMenuSpan"></span>
-            <span class="navMenuSpan"></span>
-            <span class="navMenuSpan"></span>
-          </div>
-        </div>
-      </nav>
-      <div class="heroSection">
+      <section class="heroSection">
         <div class="heroFadeOverlay"></div>
         <div class="heroContent">
-          <p class="heroComponent">
+          <p class="heroComponent hero-animate">
             <span class="heroComponentSpan"></span> AVAILABLE FOR OPPORTUNITIES
             • ENUGU, NIGERIA
           </p>
-          <h1 class="heroH1">WEB <span class="heroH1Span">DEVELOPER</span></h1>
-          <p class="heroParagraph">
+          <h1 class="heroH1 hero-animate">
+            WEB <span class="heroH1Span">DEVELOPER</span>
+          </h1>
+          <p class="heroParagraph hero-animate">
             I solve real-world business problems through code. Over the last 4+
-            years, I’ve specialized in turning sluggish websites and complex UI
+            years, I've specialized in turning sluggish websites and complex UI
             hurdles into fast, responsive, and high-converting web applications.
           </p>
-          <div class="heroButtons">
-            <a href="" class="btn primaryBtn heroBtn1">
+          <div class="heroButtons hero-animate">
+            <a href="#Projects" class="btn primaryBtn heroBtn1">
               <span>View my work</span></a
             ><br />
             <a href="" class="btn secondaryBtn heroBtn2">
               <span>Hire me</span></a
             >
           </div>
-          <div class="ratingsContainer">
+          <div class="ratingsContainer hero-animate">
             <div class="ratingsContainerChild">
               <div>4 <span>+</span></div>
               <p>YEARS EXP.</p>
@@ -100,7 +103,7 @@
         <div class="heroImg">
           <!-- <img src="images/mypfp.jpg" alt="my profile picture" /> -->
         </div>
-      </div>
+      </section>
     </header>
     <div class="marquee-section">
       <div class="marquee-track">
@@ -124,7 +127,7 @@
     </div>
     <main class="main">
       <!-- __________ ABOUT SECTION __________ -->
-      <section class="about">
+      <section class="about" id="about">
         <span class="section-label">IDENTITY</span>
         <h2 class="about-header">
           The developer <br />
@@ -132,7 +135,7 @@
         </h2>
         <div class="about-grid">
           <!-- LEFT SIDE -->
-          <div>
+          <div class="slide-right">
             <h3 class="about-lead">
               Clean code. Clear thinking.<br />
               <span class="highlight">Real results.</span>
@@ -163,7 +166,7 @@
           </div>
 
           <!-- RIGHT SIDE: TIMELINE -->
-          <div class="about-right">
+          <div class="about-right slide-left">
             <img
               src="images/logo-white-Photoroom.png"
               alt=""
@@ -241,7 +244,7 @@
         </div>
       </section>
       <!-- __________ PROJECT SECTION __________ -->
-      <section class="projects">
+      <section class="projects" id="Projects">
         <span class="section-label">SELECTED WORK</span>
         <h2 class="project-header">My work</h2>
         <div class="project-cards-container">
@@ -311,7 +314,7 @@
         </div>
       </section>
       <!-- __________ WORK-PROCESS SECTION __________ -->
-      <section class="work-process">
+      <section class="work-process slide-right" id="Process">
         <p class="work-process-component">how i work</p>
         <h2 class="work-process-header">HOW I WORK</h2>
         <div class="process">
@@ -360,7 +363,7 @@
       </section>
       <!-- __________ REVIEWS SECTION __________ -->
 
-      <section class="reviews">
+      <section class="reviews slide-left" id="Ratings">
         <span class="section-label">testimonials</span>
         <h2 class="project-header">what my client say about me</h2>
         <div class="review-container">
@@ -401,11 +404,11 @@
         </div>
       </section>
       <!-- __________ CONTACT SECTION __________ -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <span class="section-label">Contact</span>
         <h2 class="project-header">Ready to Build Something Great?</h2>
         <div class="contact-grid">
-          <div class="contact-left">
+          <div class="contact-left slide-right">
             <p>
               Have a technical challenge to solve or a platform to scale? Let's
               turn your vision into production-ready software.
@@ -465,7 +468,7 @@
             </div>
           </div>
           <!-- CONTACT RIGHT -->
-          <div class="contact-right">
+          <div class="contact-right slide-left">
             <div class="form-header">Send a Message</div>
             <div class="form-subheader">all field marked * are required</div>
             <form action="" class="contact-form">
