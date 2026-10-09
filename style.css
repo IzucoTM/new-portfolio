@@ -27,9 +27,9 @@ h1,
 h2,
 h3,
 h4 {
-  /* font-family: "Space Grotesk", sans-serif; */
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 900;
+  font-family: "Space Grotesk", sans-serif;
+  /* font-family: "IBM Plex Mono", monospace; */
+  /* font-weight: 900; */
 }
 img {
   width: 100%;
@@ -45,9 +45,7 @@ a {
 section {
   padding: 5rem 1rem;
 }
-main {
-  position: relative;
-}
+
 .slide-left,
 .slide-right {
   opacity: 0;
@@ -108,6 +106,7 @@ input {
   inset: 0;
   z-index: -1;
   transition: background-color 0.3s ease;
+  pointer-events: none;
 }
 .nav.scrolled {
   border-bottom: 1px solid #5d616669;
@@ -200,15 +199,18 @@ input {
 
 /* ____________ HERO SECTION ____________ */
 .header {
+  position: sticky;
+  top: -50vh;
+}
+
+.heroSection {
   background-image: url(images/mypfp.jpg);
   background-size: cover;
   background-position: center;
-  position: relative;
   padding-top: 15rem;
   padding-bottom: 1rem;
 }
-
-.header::after {
+.heroSection::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -217,17 +219,12 @@ input {
   height: 100%;
   background: linear-gradient(to bottom, #5d61665d, #1a1d20);
   pointer-events: none;
-  z-index: 1;
-}
-.heroSection {
-  padding: 0;
-}
-.heroContent {
-  padding: 0 1rem;
 }
 .heroContent {
   position: relative;
-  z-index: 2;
+  z-index: 1;
+  transform-origin: center center;
+  will-change: transform, opacity;
 }
 .heroComponent {
   display: flex;
@@ -243,12 +240,16 @@ input {
   background-color: #8d0801;
   border-radius: 50%;
 }
+.heroH1 {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -3px;
+}
 .heroH1Span {
-  display: block;
+  /* display: block; */
   background: linear-gradient(120deg, #630601, #98211a);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 3.5rem;
   font-weight: 900;
 }
 .heroParagraph {
@@ -320,7 +321,10 @@ input {
     transform: translateY(0);
   }
 }
-
+.main {
+  position: relative;
+  z-index: 3;
+}
 /* ____________ MARQUEE SECTION ____________ */
 
 .marquee-section {
@@ -329,7 +333,6 @@ input {
   overflow: hidden;
   padding: 1.2rem 0;
   background-color: #111111;
-  position: relative;
 }
 .marquee-track {
   display: flex;
@@ -490,6 +493,7 @@ input {
       transparent 60%
     ),
     #111111;
+  position: relative;
 }
 
 .project-header {
@@ -505,6 +509,8 @@ input {
   background-color: #1a1a1a;
   border: 1px solid #333333;
   overflow: hidden;
+  position: sticky;
+  top: 100px;
 }
 
 .card-img {
