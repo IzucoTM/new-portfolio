@@ -34,3 +34,5 @@ const observer = new IntersectionObserver(
 );
 
 slideItems.forEach((item) => observer.observe(item));
+
+c;

@@ -1,4 +1,8 @@
 /* ____________ GLOBAL STYLING ____________ */
+/* :root {
+  --bg: #1a1d20;
+  
+} */
 
 *,
 *::after,
@@ -14,14 +18,17 @@ html {
 }
 body {
   background-color: #111111;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inter", sans-serif;
+
   overflow-x: clip;
+  background-color: #090909;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Inter", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
 }
 img {
   width: 100%;
@@ -36,6 +43,9 @@ a {
 
 section {
   padding: 5rem 1rem;
+}
+main {
+  position: relative;
 }
 .slide-left,
 .slide-right {
@@ -54,6 +64,9 @@ section {
 .slide-right.show {
   opacity: 1;
   transform: translateX(0);
+}
+input {
+  font-size: 16px;
 }
 /* ____________ COMPONENTS STYLING ____________ */
 .btn {
@@ -192,6 +205,8 @@ section {
   position: relative;
   padding-top: 15rem;
   padding-bottom: 1rem;
+  position: sticky;
+  top: 0;
 }
 
 .header::after {
@@ -230,9 +245,9 @@ section {
   border-radius: 50%;
 }
 .heroH1Span {
-  display: block;
+  /* display: block; */
   background: linear-gradient(120deg, #630601, #98211a);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
   font-weight: 900;
@@ -349,6 +364,12 @@ section {
 /* ____________ ABOUT SECTION ____________ */
 .about {
   background-color: #1a1a1a;
+  background-image:
+    linear-gradient(to right, #5d616615 1px, transparent 1px),
+    linear-gradient(to bottom, #5d616617 1px, transparent 1px);
+  background-size: 30px 30px;
+  position: relative;
+  z-index: 5;
 }
 
 .section-label {
@@ -469,14 +490,14 @@ section {
   font-size: 2.8rem;
   margin-bottom: 2rem;
 }
-/* .project-cards-container {
+.project-cards-container {
   display: flex;
   flex-direction: column;
-} */
+  gap: 0.2rem;
+}
 .project-card {
   background-color: #1a1a1a;
   border: 1px solid #333333;
-  margin-bottom: 0.2rem;
   overflow: hidden;
 }
 
@@ -804,7 +825,7 @@ section {
   background-color: #1a1a1a;
   color: #d2d4d7;
   border-radius: 2px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
   padding: 0.75rem 1rem;
   outline: none;
