@@ -447,15 +447,7 @@ input {
 .about-right {
   position: relative;
 }
-.about-logobg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 80%;
-  opacity: 0.09;
-  z-index: 0;
-}
+
 .about-right-content {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -490,11 +482,6 @@ input {
 /* ____________ PROJECTS SECTION ____________ */
 
 .projects {
-  /* background-color: #111111; */
-  background-image:
-    linear-gradient(to right, #5d616607 1px, transparent 1px),
-    linear-gradient(to bottom, #5d616604 1px, transparent 1px);
-  background-size: 30px 30px;
   background:
     radial-gradient(
       ellipse at 15% 20%,
