@@ -246,26 +246,28 @@
       <section class="projects" id="Projects">
         <span class="section-label">SELECTED WORK</span>
         <h2 class="project-header">My work</h2>
-        <div class="project-cards-container">
+        <div class="project-cards-container slide-right">
           <!-- ---------- PROJECT 1 ---------- -->
           <div class="project-card">
-            <div class="card-img">
-              <img src="images/mypfp.jpg" alt="" />
-            </div>
-            <div class="card-content">
-              <p class="project-card-component">portfolio</p>
-              <h4 class="project-card-title">project title</h4>
-              <p class="project-card-paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                quibusdam tempora eos ex optio, mollitia reiciendis, impedit
-                odit adipisci at dolor aspernatur est, eligendi fugit provident
-                magni dolorem animi quam?
-              </p>
-              <a href="" class="card-btn"
-                >visit live site<ion-icon
-                  name="arrow-up-right-box-outline"
-                ></ion-icon
-              ></a>
+            <div class="project-card-inner">
+              <div class="card-img">
+                <img src="images/mypfp.jpg" alt="" />
+              </div>
+              <div class="card-content">
+                <p class="project-card-component">portfolio</p>
+                <h4 class="project-card-title">project title</h4>
+                <p class="project-card-paragraph">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                  quibusdam tempora eos ex optio, mollitia reiciendis, impedit
+                  odit adipisci at dolor aspernatur est, eligendi fugit
+                  provident magni dolorem animi quam?
+                </p>
+                <a href="" class="card-btn"
+                  >visit live site<ion-icon
+                    name="arrow-up-right-box-outline"
+                  ></ion-icon
+                ></a>
+              </div>
             </div>
           </div>
           <!-- ---------- PROJECT 2 ---------- -->
@@ -470,7 +472,7 @@
           <div class="contact-right slide-left">
             <div class="form-header">Send a Message</div>
             <div class="form-subheader">all field marked * are required</div>
-            <form action="" class="contact-form">
+            <form action="" class="contact-form" id="contact-form" novalidate>
               <div class="form-group">
                 <label class="form-label" for="name"
                   >Name
@@ -484,7 +486,9 @@
                   placeholder="your fullname"
                   required
                 />
-                <span class="form-error-message">Please enter your name</span>
+                <span class="form-error-message" id="error-message" hidden
+                  >Please enter your name</span
+                >
               </div>
               <div class="form-group">
                 <label class="form-label" for="email"
@@ -499,7 +503,9 @@
                   placeholder="your email"
                   required
                 />
-                <span class="form-error-message">Please enter your email</span>
+                <span class="form-error-message" id="error-message" hidden
+                  >Please enter your email</span
+                >
               </div>
               <div class="form-group">
                 <label class="form-label" for="subject"
@@ -511,7 +517,9 @@
                   <option value="support">Support Request</option>
                   <option value="feedback">Feedback</option>
                 </select>
-                <span class="form-error-message">Please select a subject</span>
+                <span class="form-error-message" id="error-message" hidden
+                  >Please select a subject</span
+                >
               </div>
               <div class="form-group">
                 <label class="form-label" for="message"
@@ -526,7 +534,7 @@
                   placeholder="tell me about your project and budget"
                   required
                 ></textarea>
-                <span class="form-error-message"
+                <span class="form-error-message" id="error-message" hidden
                   >Please enter your message</span
                 >
               </div>
@@ -535,7 +543,7 @@
                   ><ion-icon name="mail-unread-outline"></ion-icon> send
                   directly to my inbox</span
                 >
-                <button type="submit" class="btn primaryBtn">
+                <button type="submit" class="btn primaryBtn" id="submit">
                   Send Message
                 </button>
               </div>

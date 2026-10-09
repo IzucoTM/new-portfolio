@@ -35,7 +35,7 @@ const observer = new IntersectionObserver(
 
 slideItems.forEach((item) => observer.observe(item));
 
-// shriking of the hero section
+// shrinking of the hero section
 
 const heroStage = document.querySelector(".header");
 const heroContent = document.querySelector(".heroContent");
@@ -59,7 +59,7 @@ window.addEventListener("scroll", updateHero, { passive: true });
 window.addEventListener("resize", updateHero);
 updateHero();
 
-// tufky
+// this is for my project card shrink
 
 const projectCards = document.querySelectorAll(".project-card");
 function updateProjectCards() {
