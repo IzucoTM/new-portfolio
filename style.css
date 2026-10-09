@@ -27,7 +27,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Space Grotesk", sans-serif;
+  /* font-family: "Space Grotesk", sans-serif; */
+  font-family: "IBM Plex Mono", monospace;
   font-weight: 900;
 }
 img {
@@ -71,7 +72,7 @@ input {
 /* ____________ COMPONENTS STYLING ____________ */
 .btn {
   padding: 15px 60px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .primaryBtn {
   background-color: #98211a;
@@ -205,8 +206,6 @@ input {
   position: relative;
   padding-top: 15rem;
   padding-bottom: 1rem;
-  position: sticky;
-  top: 0;
 }
 
 .header::after {
@@ -245,7 +244,7 @@ input {
   border-radius: 50%;
 }
 .heroH1Span {
-  /* display: block; */
+  display: block;
   background: linear-gradient(120deg, #630601, #98211a);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -330,6 +329,7 @@ input {
   overflow: hidden;
   padding: 1.2rem 0;
   background-color: #111111;
+  position: relative;
 }
 .marquee-track {
   display: flex;
@@ -363,11 +363,17 @@ input {
 
 /* ____________ ABOUT SECTION ____________ */
 .about {
-  background-color: #1a1a1a;
-  background-image:
-    linear-gradient(to right, #5d616615 1px, transparent 1px),
-    linear-gradient(to bottom, #5d616617 1px, transparent 1px);
-  background-size: 30px 30px;
+  /* background-color: ; */
+
+  background:
+    radial-gradient(
+      ellipse at 15% 20%,
+      rgba(91, 23, 40, 0.16) 0%,
+      rgba(49, 13, 24, 0.08) 30%,
+      transparent 60%
+    ),
+    #1a1a1a;
+
   position: relative;
   z-index: 5;
 }
@@ -484,8 +490,21 @@ input {
 /* ____________ PROJECTS SECTION ____________ */
 
 .projects {
-  background-color: #111111;
+  /* background-color: #111111; */
+  background-image:
+    linear-gradient(to right, #5d616607 1px, transparent 1px),
+    linear-gradient(to bottom, #5d616604 1px, transparent 1px);
+  background-size: 30px 30px;
+  background:
+    radial-gradient(
+      ellipse at 15% 20%,
+      rgba(91, 23, 40, 0.16) 0%,
+      rgba(49, 13, 24, 0.08) 30%,
+      transparent 60%
+    ),
+    #111111;
 }
+
 .project-header {
   font-size: 2.8rem;
   margin-bottom: 2rem;
