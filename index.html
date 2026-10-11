@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- NAV BAR -->
@@ -532,8 +532,10 @@
 
       <section class="section contact-section" id="contact">
         <div class="container">
-          <span class="section-label">Contact</span>
-          <h2 class="project-header">Ready to Build Something Great?</h2>
+          <div class="eyebrow">have something in mind</div>
+          <h2>
+            Ready to Build <span class="gradient-text">Something Great?</span>
+          </h2>
           <div class="contact-content">
             <div class="contact-left slide-right">
               <p>
@@ -671,7 +673,11 @@
                     ><ion-icon name="mail-unread-outline"></ion-icon> send
                     directly to my inbox</span
                   >
-                  <button type="submit" class="btn primaryBtn" id="submit">
+                  <button
+                    type="submit"
+                    class="button button-primary"
+                    id="submit"
+                  >
                     Send Message
                   </button>
                 </div>
@@ -692,19 +698,33 @@
         >
         <div class="social-links">
           <!-- Replace # with your actual profile URLs. -->
-          <a href="#" aria-label="GitHub profile" data-placeholder-link
-            >GitHub ↗</a
-          >
-          <a href="#" aria-label="LinkedIn profile" data-placeholder-link
+
+          <a
+            href="https://www.linkedin.com/in/henry-izuchukwu-587955398?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+            aria-label="LinkedIn profile"
+            data-placeholder-link
             >LinkedIn ↗</a
           >
-          <a href="#" aria-label="X profile" data-placeholder-link>X ↗</a>
+          <a
+            href="https://x.com/dev_izuco?s=11"
+            aria-label="X profile"
+            data-placeholder-link
+            >X ↗</a
+          >
         </div>
         <span class="footer-note"
           >© <span id="year"></span> IZUCO. All rights reserved.</span
         >
       </div>
     </footer>
-    <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
