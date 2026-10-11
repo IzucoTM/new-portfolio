@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08090a" />
+    <meta
+      name="description"
+      content="IZUCO — Front-end developer building modern, responsive, and thoughtful web experiences."
+    />
+    <title>IZUCO — Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="IZUCO home"
+          >IZUCO<span>.</span></a
+        >
+        <div class="nav-links" id="navLinks">
+          <a class="active" href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <a class="button button-quiet nav-hire" href="#contact"
+            >Hire me <span class="arrow">↗</span></a
+          >
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker mono">
+              FRONT-END DEVELOPER <span>/</span> WEB DEVELOPER
+            </p>
+            <h1>
+              I build modern<br /><span class="gradient-text"
+                >web experiences.</span
+              >
+            </h1>
+            <p class="hero-description">
+              I’m Izuco — a developer who turns ideas into fast, responsive, and
+              thoughtful websites. I care about the details users feel and the
+              performance they don’t have to think about.
+            </p>
+            <div class="hero-buttons">
+              <a class="button button-primary" href="#contact"
+                >Let’s work together <span class="arrow">→</span></a
+              >
+              <a class="button button-quiet" href="#projects"
+                >Explore my work <span class="arrow">↘</span></a
+              >
+            </div>
+            <div class="hero-meta">
+              <span class="status-dot"></span
+              ><span>Available for select projects</span
+              ><span aria-hidden="true">·</span><span>Based in Nigeria</span>
+            </div>
+          </div>
+          <div class="hero-visual" aria-label="Portrait area">
+            <div class="portrait-frame">
+              <!-- Replace this image URL with your own portrait for a personal hero image. -->
+              <img
+                class="portrait"
+                src="images/mypfp.jpg"
+                alt="Black and white portrait placeholder for Izuco"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.hidden = false;
+                "
+              />
+              <div class="portrait-placeholder" hidden>
+                <div class="silhouette"></div>
+              </div>
+            </div>
+            <div class="portrait-note">
+              <span class="signature">Izuco</span
+              ><span class="mono">IZUCO_TM</span>
+            </div>
+          </div>
+        </div>
+        <div class="side-marker mono">Scroll to explore</div>
+      </section>
+      <!-- ABOUT SECTION -->
+      <section class="section" id="about">
+        <div class="container about-grid">
+          <div class="about-title-wrap reveal">
+            <div class="eyebrow">A little about me</div>
+            <h2 class="about-title">
+              Turning ideas into
+              <span class="gradient-text">functional websites.</span>
+            </h2>
+          </div>
+          <div class="reveal delay-1">
+            <p class="about-copy">
+              I’m a self-driven developer focused on building clean interfaces
+              that feel intuitive and work beautifully across devices. I enjoy
+              figuring out how things work, improving the small details, and
+              turning a rough idea into something people can actually use.
+            </p>
+            <p class="about-copy">
+              My current focus is front-end engineering, web performance, and
+              exploring how AI can make digital products more useful.
+            </p>
+          </div>
+          <div class="info-grid reveal delay-2">
+            <article class="info-card">
+              <div class="info-card-top">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+                <span>Location</span>
+              </div>
+              <p>Nigeria · Working remotely</p>
+            </article>
+            <article class="info-card">
+              <div class="info-card-top">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16" />
+                </svg>
+                <span>Tools I use</span>
+              </div>
+              <p>VS Code, Git, GitHub, Figma</p>
+            </article>
+            <article class="info-card">
+              <div class="info-card-top">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="3" y="7" width="18" height="14" rx="2" />
+                  <path d="M8 7V4h8v3M3 12h18" />
+                </svg>
+                <span>Experience</span>
+              </div>
+              <p>Self-directed · Building in public</p>
+            </article>
+            <article class="info-card">
+              <div class="info-card-top">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M12 3 2.5 8 12 13l9.5-5L12 3Z" />
+                  <path d="M5 9.5V15l7 4 7-4V9.5" />
+                </svg>
+                <span>Currently</span>
+              </div>
+              <p>Learning, building, exploring AI</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow">What I can help with</div>
+              <h2>
+                Built with purpose.<br /><span class="gradient-text"
+                  >Designed to work.</span
+                >
+              </h2>
+            </div>
+            <p>
+              Good websites do more than look polished. They make the next step
+              clear, keep people engaged, and make a business easier to trust.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <span class="service-index mono">01 / 03</span>
+              <div class="service-icon">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path d="M3 9h18M8 6.5h.01M6 6.5h.01" />
+                </svg>
+              </div>
+              <h3>Website development</h3>
+              <p>
+                Responsive, accessible websites built around your brand, your
+                audience, and the action you want visitors to take.
+              </p>
+            </article>
+            <article class="service-card reveal delay-1">
+              <span class="service-index mono">02 / 03</span>
+              <div class="service-icon">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M12 3 14.8 9.2 21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8L12 3Z"
+                  />
+                </svg>
+              </div>
+              <h3>UI implementation</h3>
+              <p>
+                Turning designs into thoughtful interfaces with consistent
+                spacing, clear hierarchy, and details that feel intentional.
+              </p>
+            </article>
+            <article class="service-card reveal delay-2">
+              <span class="service-index mono">03 / 03</span>
+              <div class="service-icon">
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M4 19V5M4 19h17" />
+                  <path d="m7 15 4-5 3 2 5-7" />
+                </svg>
+              </div>
+              <h3>Performance & refinement</h3>
+              <p>
+                Improving load times, responsiveness, and usability so the
+                experience feels fast on real devices—not just in a mockup.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container skills-layout">
+          <div class="skills-intro reveal">
+            <div class="eyebrow">Tools & technologies</div>
+            <h2>
+              Curious by nature.<br /><span class="gradient-text"
+                >Practical by design.</span
+              >
+            </h2>
+            <p>
+              I choose tools to solve the problem, not just to follow a trend.
+              My foundation is front-end development, with a growing interest in
+              performance, systems, and AI.
+            </p>
+            <a class="button button-quiet" href="#contact"
+              >Have a project? <span class="arrow">↗</span></a
+            >
+          </div>
+          <div class="skills-list reveal delay-1">
+            <div class="skill-group">
+              <h3>Core development</h3>
+              <div class="tags">
+                <span class="tag">HTML5</span><span class="tag">CSS3</span
+                ><span class="tag">JavaScript</span
+                ><span class="tag">TypeScript</span
+                ><span class="tag">Responsive design</span
+                ><span class="tag">Accessibility</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Libraries & styling</h3>
+              <div class="tags">
+                <span class="tag">React</span><span class="tag">Next.js</span
+                ><span class="tag">Tailwind CSS</span
+                ><span class="tag">Vanilla CSS</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Workflow & delivery</h3>
+              <div class="tags">
+                <span class="tag">Git</span><span class="tag">GitHub</span
+                ><span class="tag">Vercel</span><span class="tag">Netlify</span
+                ><span class="tag">Debugging</span
+                ><span class="tag">Web performance</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Currently exploring</h3>
+              <div class="tags">
+                <span class="tag">AI engineering</span
+                ><span class="tag">APIs</span
+                ><span class="tag">Backend fundamentals</span
+                ><span class="tag">System design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow">Selected work</div>
+              <h2>Ideas made <span class="gradient-text">tangible.</span></h2>
+            </div>
+            <p>
+              A selection of project concepts and build directions. Replace
+              these sample cards with your real projects, screenshots, and live
+              links.
+            </p>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-art">
+                <div class="art-glow"></div>
+                <div class="mock-window">
+                  <div class="mock-bar"><i></i><i></i><i></i></div>
+                  <div class="mock-content">
+                    <div class="mock-label">DIGITAL STUDIO / 2026</div>
+                    <div class="mock-title">Make your next move matter.</div>
+                    <div class="mock-lines">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="mock-pill"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <div class="project-topline">
+                  <span class="project-number">PROJECT 01</span
+                  ><span>Brand / Landing page</span>
+                </div>
+                <h3>Studio North</h3>
+                <p>
+                  A conversion-focused landing page concept with strong
+                  typography, a considered layout, and a clear path to action.
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span
+                  ><span>UI/UX</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal delay-1">
+              <div class="project-art alt">
+                <div class="art-glow"></div>
+                <div class="mock-window">
+                  <div class="mock-bar"><i></i><i></i><i></i></div>
+                  <div class="mock-content">
+                    <div class="mock-label">OBJECTS / EVERYDAY DESIGN</div>
+                    <div class="mock-title">
+                      Less noise.<br />More intention.
+                    </div>
+                    <div class="mock-lines">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="mock-pill"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <div class="project-topline">
+                  <span class="project-number">PROJECT 02</span
+                  ><span>E-commerce / Concept</span>
+                </div>
+                <h3>Form Objects</h3>
+                <p>
+                  A minimal storefront direction built to make products the
+                  focus and browsing feel simple across screen sizes.
+                </p>
+                <div class="project-tags">
+                  <span>Responsive UI</span><span>Product design</span
+                  ><span>JavaScript</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-art third">
+                <div class="art-glow"></div>
+                <div class="mock-window">
+                  <div class="mock-bar"><i></i><i></i><i></i></div>
+                  <div class="mock-content">
+                    <div class="mock-label">PERSONAL FINANCE / DASHBOARD</div>
+                    <div class="mock-title">Know where it goes.</div>
+                    <div class="mock-lines">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="mock-pill"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <div class="project-topline">
+                  <span class="project-number">PROJECT 03</span
+                  ><span>Dashboard / UI</span>
+                </div>
+                <h3>Ledger</h3>
+                <p>
+                  A dashboard concept exploring readable data, clear information
+                  hierarchy, and practical interface patterns.
+                </p>
+                <div class="project-tags">
+                  <span>React</span><span>Components</span><span>Data UI</span>
+                </div>
+              </div>
+            </article>
+            <article class="project-card reveal delay-1">
+              <div class="project-art fourth">
+                <div class="art-glow"></div>
+                <div class="mock-window">
+                  <div class="mock-bar"><i></i><i></i><i></i></div>
+                  <div class="mock-content">
+                    <div class="mock-label">COMMUNITY / NON-PROFIT</div>
+                    <div class="mock-title">Small acts.<br />Real impact.</div>
+                    <div class="mock-lines">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <span class="mock-pill"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-details">
+                <div class="project-topline">
+                  <span class="project-number">PROJECT 04</span
+                  ><span>Foundation / Website</span>
+                </div>
+                <h3>Good Ground</h3>
+                <p>
+                  A warm, accessible foundation website concept that makes its
+                  mission, impact, and ways to contribute easy to find.
+                </p>
+                <div class="project-tags">
+                  <span>Web design</span><span>Accessibility</span
+                  ><span>Responsive</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="process">
+        <div class="container">
+          <div class="section-heading reveal">
+            <div>
+              <div class="eyebrow">How I approach a build</div>
+              <h2>
+                From rough idea<br />to
+                <span class="gradient-text">real experience.</span>
+              </h2>
+            </div>
+            <p>
+              A simple process keeps the work focused, collaborative, and
+              connected to the goal.
+            </p>
+          </div>
+          <div class="process-strip reveal">
+            <article class="process-step">
+              <span class="mono">STEP 01</span>
+              <h3>Understand</h3>
+              <p>
+                Clarify the audience, purpose, and problem the website needs to
+                solve.
+              </p>
+            </article>
+            <article class="process-step">
+              <span class="mono">STEP 02</span>
+              <h3>Structure</h3>
+              <p>
+                Plan the content, user journey, layout, and responsive behavior.
+              </p>
+            </article>
+            <article class="process-step">
+              <span class="mono">STEP 03</span>
+              <h3>Build</h3>
+              <p>
+                Develop the interface with reusable patterns and careful
+                details.
+              </p>
+            </article>
+            <article class="process-step">
+              <span class="mono">STEP 04</span>
+              <h3>Refine</h3>
+              <p>
+                Test across screen sizes, fix rough edges, and improve
+                performance.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <span class="section-label">Contact</span>
+          <h2 class="project-header">Ready to Build Something Great?</h2>
+          <div class="contact-content">
+            <div class="contact-left slide-right">
+              <p>
+                Have a technical challenge to solve or a platform to scale?
+                Let's turn your vision into production-ready software.
+              </p>
+              <a
+                href="mailto:izuchukwuhenry62@gmail.com"
+                class="contact-email-link"
+                ><ion-icon name="mail-outline"></ion-icon
+                >izuchukwuhenry62@gmail.com<ion-icon
+                  name="arrow-up-right-box-outline"
+                ></ion-icon
+              ></a>
+              <ul class="contact-info-list">
+                <li class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <ion-icon name="location-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <div class="contact-info-label">location</div>
+                    <div class="contact-info-value">ENUGU, NIGERIA</div>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <ion-icon name="alarm-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <div class="contact-info-label">Response time</div>
+                    <div class="contact-info-value">
+                      Usually within 24 hours
+                    </div>
+                  </div>
+                </li>
+                <li class="contact-info-item">
+                  <div class="contact-info-icon">
+                    <ion-icon name="calendar-clear-outline"></ion-icon>
+                  </div>
+                  <div>
+                    <div class="contact-info-label">Availability</div>
+                    <div class="contact-info-value">
+                      Open to full-time and freelance opportunities
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="contact-socials">
+                <a
+                  href="https://www.linkedin.com/in/henry-izuchukwu-587955398?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                  class="social-link"
+                  ><ion-icon name="logo-linkedin"></ion-icon> linkedin</a
+                >
+                <a href="mailto:izuchukwuhenry62@gmail.com" class="social-link"
+                  ><ion-icon name="mail-outline"></ion-icon> email</a
+                >
+                <a href="https://x.com/dev_izuco?s=11" class="social-link"
+                  ><ion-icon name="logo-x"></ion-icon> tweeter</a
+                >
+              </div>
+            </div>
+            <!-- CONTACT RIGHT -->
+            <div class="contact-right slide-left">
+              <div class="form-header">Send a Message</div>
+              <div class="form-subheader">all field marked * are required</div>
+              <form action="" class="contact-form" id="contact-form" novalidate>
+                <div class="form-group">
+                  <label class="form-label" for="name"
+                    >Name
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="your fullname"
+                    required
+                  />
+                  <span class="form-error-message" id="error-message" hidden
+                    >Please enter your name</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email"
+                    >Email
+                    <span class="required">*</span>
+                  </label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your email"
+                    required
+                  />
+                  <span class="form-error-message" id="error-message" hidden
+                    >Please enter your email</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="subject"
+                    >Subject <span class="required">*</span>
+                  </label>
+                  <select name="subject" id="subject" class="form-select">
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Support Request</option>
+                    <option value="feedback">Feedback</option>
+                  </select>
+                  <span class="form-error-message" id="error-message" hidden
+                    >Please select a subject</span
+                  >
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="message"
+                    >Message
+                    <span class="required">*</span>
+                  </label>
+                  <textarea
+                    class="form-textarea"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="tell me about your project and budget"
+                    required
+                  ></textarea>
+                  <span class="form-error-message" id="error-message" hidden
+                    >Please enter your message</span
+                  >
+                </div>
+                <div class="form-foooter">
+                  <span class="form-note"
+                    ><ion-icon name="mail-unread-outline"></ion-icon> send
+                    directly to my inbox</span
+                  >
+                  <button type="submit" class="btn primaryBtn" id="submit">
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-brand" href="#home"
+          >IZUCO<span class="muted">.</span></a
+        >
+        <span class="footer-note"
+          >Designed with intent · Built with curiosity</span
+        >
+        <div class="social-links">
+          <!-- Replace # with your actual profile URLs. -->
+          <a href="#" aria-label="GitHub profile" data-placeholder-link
+            >GitHub ↗</a
+          >
+          <a href="#" aria-label="LinkedIn profile" data-placeholder-link
+            >LinkedIn ↗</a
+          >
+          <a href="#" aria-label="X profile" data-placeholder-link>X ↗</a>
+        </div>
+        <span class="footer-note"
+          >© <span id="year"></span> IZUCO. All rights reserved.</span
+        >
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
