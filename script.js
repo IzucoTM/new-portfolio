@@ -83,3 +83,54 @@ document.querySelectorAll("[data-placeholder-link]").forEach((link) => {
     }
   });
 });
+
+// form
+const form = document.getElementById("contact-form");
+const fields = form.querySelectorAll(
+  "input[type='text'], input[type='email'], select, textarea",
+);
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let allFilled = true;
+
+  fields.forEach((field) => {
+    const error = field.nextElementSibling;
+
+    if (field.value.trim() === "") {
+      error.style.display = "block";
+      allFilled = false;
+    } else {
+      error.style.display = "none";
+    }
+  });
+
+  if (allFilled) {
+    console.log("Form sent!");
+    const whatsapp = "2349123645519";
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const messsage = document.getElementById("message").value.trim();
+
+    const text =
+      `Hello my name is ${name}.` +
+      `email: ${email}` +
+      `subject: ${subject}` +
+      `message: ${messsage}`;
+
+    window.location.href = `https://wa.me/${whatsapp}?text=${encodeURIComponent(text)}`;
+    form.reset();
+  }
+});
+
+fields.forEach((field) => {
+  const hideError = () => {
+    field.nextElementSibling.style.display = "none";
+  };
+
+  field.addEventListener("input", hideError);
+  field.addEventListener("change", hideError);
+});
+
+// submit form to my whatsappp

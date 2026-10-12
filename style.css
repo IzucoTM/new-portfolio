@@ -6,6 +6,7 @@
   --text: #f4f4f5;
   --muted: #a0a1a8;
   --faint: #686a72;
+  --error: #98211a;
   --line: rgba(255, 255, 255, 0.11);
   --grid: rgba(255, 255, 255, 0.055);
   --accent: #d9dce6;
@@ -1044,15 +1045,15 @@ h1 {
   line-height: 1.6;
   padding: 0.75rem 1rem;
   outline: none;
-  /* trans */
 }
-#form-error-message {
+.form-error-message {
   font-size: 0.7rem;
   font-family: "JetBrains Mono", monospace;
   letter-spacing: 0.1em;
-  color: #98211a;
-  /* display: none; */
+  color: var(--error);
+  display: none;
 }
+
 .form-foooter {
   display: flex;
   flex-direction: column;
