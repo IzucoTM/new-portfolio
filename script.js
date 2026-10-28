@@ -112,12 +112,8 @@ form.addEventListener("submit", (event) => {
     const email = document.getElementById("email").value.trim();
     const subject = document.getElementById("subject").value.trim();
     const messsage = document.getElementById("message").value.trim();
-
-    const text =
-      `Hello my name is ${name}, ` +
-      `email: ${email}` +
-      `subject: ${subject}` +
-      `message: ${messsage}`;
+    const space = " ";
+    const text = `Hello my name is ${name},${space} email: ${email}, ${space} subject: ${subject},${space} message: ${messsage}`;
 
     window.location.href = `https://wa.me/${whatsapp}?text=${encodeURIComponent(text)}`;
     form.reset();
