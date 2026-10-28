@@ -114,7 +114,7 @@ form.addEventListener("submit", (event) => {
     const messsage = document.getElementById("message").value.trim();
 
     const text =
-      `Hello my name is ${name}.` +
+      `Hello my name is ${name}, ` +
       `email: ${email}` +
       `subject: ${subject}` +
       `message: ${messsage}`;
